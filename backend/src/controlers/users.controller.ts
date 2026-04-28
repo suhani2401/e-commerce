@@ -10,9 +10,8 @@ export class UsersController {
             const data = await this.userRepo.loginUser(req.body);
             res.cookie("token", data.token, {
                 httpOnly: true,
-                secure: false,       // false for localhost
-                sameSite: "lax",
-                maxAge: 24 * 60 * 60 * 1000, // 1 day
+                secure: true,
+                sameSite: "none",
             });
             return successResponse(res, "User loggedin Sucessfully", data, 200);
         } catch (error) {
