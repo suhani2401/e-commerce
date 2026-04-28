@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import CancelImg from "@/assets/cancel.jpeg";
+import CancelImg from "../../public/cancel.jpeg";
 import { Button } from "../components/common/Button";
 import { ROUTES } from "../constant/routesPath";
 
