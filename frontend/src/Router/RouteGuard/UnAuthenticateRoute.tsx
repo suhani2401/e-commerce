@@ -1,8 +1,8 @@
 import { type PropsWithChildren, Suspense } from "react";
 import { useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
-import type { AuthState } from "../../redux/types";
 import { ROUTES } from "../../constant/routesPath";
+import type { AuthState } from "../../types";
 
 
 export const UnAuthenticateRoute: React.FC<PropsWithChildren> = ({

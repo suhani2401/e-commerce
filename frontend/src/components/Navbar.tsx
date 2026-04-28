@@ -1,10 +1,10 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import type { AuthState } from "../redux/types";
 import { logout } from "../redux/reducers/auth.slice";
 import { Button } from "./common/Button";
 import { FaCartArrowDown } from "react-icons/fa";
 import { ROUTES } from "../constant/routesPath";
+import type { AuthState } from "../types";
 
 const Navbar = (props: { title: string }) => {
     const loggedInUser = useSelector((state: { auth: AuthState }) => state.auth.loggedInUser);

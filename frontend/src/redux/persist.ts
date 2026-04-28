@@ -1,13 +1,10 @@
-import storage from "redux-persist/lib/storage";
-import { persistReducer } from "redux-persist";
+import persistReducer from "redux-persist/es/persistReducer";
 import { rootReducer } from "./reducers/root.reducers";
+import storage from "./storage";
 
 const persistConfig = {
-  key: "root",
-  storage: storage.default,
+  key: "e-commerce",
+  storage,
 };
 
-export const persistedReducer = persistReducer(
-  persistConfig,
-  rootReducer
-);
+export const persistedReducer = persistReducer(persistConfig, rootReducer);

@@ -26,7 +26,7 @@ const Card = (props: CardProperties) => {
 
     const handleCart = async (product_id?: string) => {
         if (product_id) {
-            const result = await addItemToCart('/cart/add-to-cart', { product_id });
+            const result = await addItemToCart('/cart/add-to-cart', { product_id, quantity: 1 });
             if (result) {
                 dispatch(addToCart(result.data));
                 toast.info("Added To Cart Successfully");
