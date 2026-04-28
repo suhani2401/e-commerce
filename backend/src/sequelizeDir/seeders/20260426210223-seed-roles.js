@@ -1,5 +1,5 @@
 'use strict';
-const {v4: uuid} = require('uuid');
+const { v4: uuid } = require('uuid');
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -7,10 +7,16 @@ module.exports = {
     await queryInterface.bulkInsert('roles', [
       {
         id: uuid(),
-        role: 'admin'
+        role: 'admin',
+        created_at: new Date(),
+        updated_at: new Date(),
+        deleted_at: null,
       }, {
         id: uuid(),
-        role: 'user'
+        role: 'user',
+        created_at: new Date(),
+        updated_at: new Date(),
+        deleted_at: null,
       }]);
   },
 
