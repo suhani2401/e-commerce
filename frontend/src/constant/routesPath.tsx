@@ -5,7 +5,7 @@ const Login = lazy(() => import("../pages/Login"));
 const Dashboard = lazy(() => import("../pages/Dashboard"));
 const Cart = lazy(() => import("../pages/Cart"));
 const Orders = lazy(() => import("../pages/Orders"));
-// const Cancel = lazy(() => import("@/pages/Cancel"));
+const Cancel = lazy(() => import("../pages/Cancel"));
 
 export type RoutesType = {
   [key in
@@ -14,7 +14,8 @@ export type RoutesType = {
   | "DASHBOARD"
   | "CART"
   | "ORDERS"
-]: {
+  | "CANCEL"
+  ]: {
     path: string;
     isPrivate?: boolean;
     element: React.ComponentType;
@@ -49,6 +50,12 @@ export const ROUTES: RoutesType = {
     path: "/orders",
     isPrivate: true,
     element: Orders,
+    roles: ['user']
+  },
+  CANCEL: {
+    path: "/cancel",
+    isPrivate: true,
+    element: Cancel,
     roles: ['user']
   },
 };
