@@ -21,6 +21,7 @@ export class UserRepository extends BaseRepository<User, UserAttributesType, Req
     async registerUser(userData: UserAttributesType): Promise<User> {
         try {
             const { role, ...data } = userData;
+            console.log(role)
             const roleDetails = await Roles.findOne({ where: { role }, attributes: ['id'] });
             console.log(roleDetails)
             return await this.create({ ...data, role: roleDetails.id });
