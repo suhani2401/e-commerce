@@ -12,7 +12,6 @@ declare global{
 
 export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
   const { token } = req.cookies;
-  console.log(req.cookies)
 
   if (!token) return errorResponse(res, "Unauthorized User", 401);
 
