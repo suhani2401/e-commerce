@@ -16,7 +16,6 @@ const Login = () => {
 
     const handleSubmit = async (values: FormikValues) => {
         const loggedInUser = await userLogin('/auth/login', values);
-        console.log(loggedInUser)
         if (!loggedInUser.success) toast.warning(loggedInUser.message);
         if (loggedInUser.success) {
             toast.success("User LoggedIn SuccessFully");
