@@ -1,13 +1,27 @@
-// src/sequelizeDir/config/sequelize-cli.config.js
-require("dotenv").config({quiet: true});
+require("dotenv").config({ quiet: true });
 
 module.exports = {
   development: {
-    username: 'postgres',
-    password: 'test@123',
-    database: 'e-commerce',
-    host: 'localhost',
+    username: "postgres",
+    password: "test@123",
+    database: "e-commerce",
+    host: "localhost",
     port: 5432,
     dialect: "postgres",
+  },
+
+  production: {
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    dialect: "postgres",
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
   },
 };
