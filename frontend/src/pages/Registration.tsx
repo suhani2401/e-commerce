@@ -19,8 +19,8 @@ const Registration = () => {
         }
         const newUser = await userRegister('/auth/register', values);
 
-        if (newUser.status !== 200) toast.warning(newUser.message);
-        if (newUser.status === 200) {
+        if (!newUser.success) toast.warning(newUser.message);
+        if (newUser.success) {
             toast.success("User Registered SuccessFully");
             navigate(ROUTES.LOGIN.path);
         }
