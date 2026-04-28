@@ -12,12 +12,12 @@ export class ProductRepository extends BaseRepository<Products, ProductsAttribut
 
     async getListOfProducts(data: ParamsDictionary): Promise<Products[]> {
         try {
-            const { search, category, limit, offset } = data;
+            const { search, category } = data;
             const where: any = {};
-            where['name'] = { [Op.like]: `%${search}%` }
-            where['category'] = category
+            if(search)  where['name'] = { [Op.like]: `%${search}%` }
+            if(category) where['category'] = category
 
-            return await this.findAll({ where, limit: Number(limit), offset: Number(offset) });
+            return await this.findAll({ where});
         } catch (error) {
             throw new Error(`Failed to fetch list of products: ${error}`);
         }

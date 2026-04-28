@@ -8,7 +8,7 @@ export class ProductController {
     getProducts = async (req: Request, res: Response) => {
         try {
             const data = req.params
-                const products = await this.productRepo.getListOfProducts(data);
+            const products = await this.productRepo.getListOfProducts(data);
             return successResponse(res, "Products fetched", products, 200);
         } catch (error) {
             return errorResponse(res, `Something went wrong! ${error}`, 500)
