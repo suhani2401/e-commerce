@@ -15,7 +15,7 @@ module.exports = {
         price: 9.99,
         stock: 99,
         image:
-          "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/image.webp",
+          "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null,
@@ -29,7 +29,7 @@ module.exports = {
         price: 19.99,
         stock: 34,
         image:
-          "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/image.webp",
+          "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null
@@ -43,7 +43,7 @@ module.exports = {
         price: 14.99,
         stock: 89,
         image:
-          "https://cdn.dummyjson.com/product-images/beauty/powder-canister/image.webp",
+          "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null
@@ -58,7 +58,7 @@ module.exports = {
         price: 12.99,
         stock: 91,
         image:
-          "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/image.webp",
+          "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null
@@ -72,7 +72,7 @@ module.exports = {
         price: 8.99,
         stock: 79,
         image:
-          "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/image.webp",
+          "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null
@@ -86,7 +86,7 @@ module.exports = {
         price: 49.99,
         stock: 29,
         image:
-          "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/image.webp",
+          "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null
@@ -100,7 +100,7 @@ module.exports = {
         price: 129.99,
         stock: 58,
         image:
-          "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/image.webp",
+          "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null
@@ -114,7 +114,7 @@ module.exports = {
         price: 89.99,
         stock: 98,
         image:
-          "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/image.webp",
+          "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null
@@ -128,7 +128,7 @@ module.exports = {
         price: 69.99,
         stock: 4,
         image:
-          "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/image.webp",
+          "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null
@@ -142,7 +142,7 @@ module.exports = {
         price: 79.99,
         stock: 91,
         image:
-          "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/image.webp",
+          "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/thumbnail.webp",
         created_at: new Date(),
         updated_at: new Date(),
         deleted_at: null
